@@ -1,7 +1,3 @@
-FROM debian:testing-slim
+FROM archlinux/base
 
-RUN apt-get update \
-    && apt-get install -y \
-    hugo \
-    python-pygments \
-    && rm -rf /var/lib/apt/lists/*
+RUN pacman -Sy --noconfirm hugo
