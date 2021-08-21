@@ -1,3 +1,3 @@
-FROM archlinux/base
+FROM alpine
 
-RUN pacman -Sy --noconfirm hugo
+RUN apk add --no-cache hugo
